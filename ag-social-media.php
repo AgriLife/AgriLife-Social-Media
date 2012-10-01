@@ -48,7 +48,7 @@ class AgriLife_Social_Media extends WP_Widget {
     if( ! empty( $title ) )
         echo $before_title . $title . $after_title;
 
-    echo '<ul class="clearfix">';
+    echo '<ul class="clearfix social-media-list">';
     foreach( $instance['s'] as $key => $value ) {
       if( ! empty( $value ) ) {
         echo '<li class="social-media-item">';
@@ -65,24 +65,19 @@ class AgriLife_Social_Media extends WP_Widget {
   private function socialUrl( $key, $value ) {
     switch($key) {
       case 'facebook' :
-        $url = 'https://facebook.com/' . $value;
-        return $url;
+        return $value;
         break;
       case 'googleplus' :
-        $url = 'https://plus.google.com/' . $value;
-        return $url;
+        return $value;
         break;
       case 'twitter' :
-        $url = 'https://twitter.com/' . $value;
-        return $url;
+        return $value;
         break;
       case 'flickr' :
-        $url = 'http://flickr.com/photos/' . $value;
-        return $url;
+        return $value;
         break;
       case 'youtube' :
-        $url = $value;
-        return $url;
+        return $value;
         break;
       case 'rss' :
         return $value;
@@ -156,24 +151,25 @@ class AgriLife_Social_Media extends WP_Widget {
       <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <hr />
+    <p class="description">Include 'http://' in all fields</p>
     <p>
-      <label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook Username:' ); ?></label>
+      <label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="text" value="<?php echo esc_attr( $facebook ); ?>" />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id( 'googleplus' ); ?>"><?php _e( 'Google+ User Number:' ); ?></label>
+      <label for="<?php echo $this->get_field_id( 'googleplus' ); ?>"><?php _e( 'Google+:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'googleplus' ); ?>" name="<?php echo $this->get_field_name( 'googleplus' ); ?>" type="text" value="<?php echo esc_attr( $googleplus ); ?>" />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php _e( 'Twitter Username:' ); ?></label>
+      <label for="<?php echo $this->get_field_id( 'twitter' ); ?>"><?php _e( 'Twitter:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'twitter' ); ?>" name="<?php echo $this->get_field_name( 'twitter' ); ?>" type="text" value="<?php echo esc_attr( $twitter ); ?>" />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id( 'flickr' ); ?>"><?php _e( 'Flickr Username:' ); ?></label>
+      <label for="<?php echo $this->get_field_id( 'flickr' ); ?>"><?php _e( 'Flickr:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'flickr' ); ?>" name="<?php echo $this->get_field_name( 'flickr' ); ?>" type="text" value="<?php echo esc_attr( $flickr ); ?>" />
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube URL (include "http://"):' ); ?></label>
+      <label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'youtube' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="text" value="<?php echo esc_attr( $youtube ); ?>" />
     </p>
     <p>

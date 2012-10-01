@@ -52,7 +52,7 @@ class AgriLife_Social_Media extends WP_Widget {
     foreach( $instance['s'] as $key => $value ) {
       if( ! empty( $value ) ) {
         echo '<li class="social-media-item">';
-        echo '<a class="' . $key . '" href="' . $this->socialUrl( $key, $value ) . '">' . $key . '</a>';
+        echo '<a class="' . $key . '" href="' . $this->socialUrl( $key, $value ) . '" target="_blank">' . $key . '</a>';
         echo '</li>';
       }
     }

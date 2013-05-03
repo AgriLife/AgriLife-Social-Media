@@ -23,37 +23,58 @@
 .social-media-item a:hover {
 	background-position: left bottom;
 }
-a.google-plus {
-	background-position: left top;
+a.googleplus {
+	background-position:-30px -160px;
+}
+a.googleplus:hover {
+	background-position:-95px -160px;
 }
 a.facebook {
-	background-position: -43px top;
+	background-position:-30px -290px;
 }
 a.facebook:hover {
-	background-position: -43px bottom;
+	background-position:-95px -290px;
 }
 a.twitter {
-	background-position: -86px top;
+	background-position:-30px -420px;
 }
 a.twitter:hover {
-	background-position: -86px bottom;
+	background-position:-95px -420px;
 }
 a.flickr {
-	background-position: -129px top;
+	background-position:-30px -355px;
 }
 a.flickr:hover {
-	background-position: -129px bottom;
+	background-position:-95px -355px;
 }
 a.youtube {
-	background-position: -172px top;
+	background-position:-30px -95px;
 }
 a.youtube:hover {
-	background-position: -172px bottom;
+	background-position:-95px -95px
 }
 a.rss {
-	background-position: -215px top;
+	background-position:-30px -485px;
 }
 a.rss:hover {
-	background-position: -215px bottom;
+	background-position:-95px -485px;
+}
+a.instagram {
+	background-position:-30px -30px;
+}
+a.instagram:hover {
+	background-position:-95px -30px;
+}
+a.linkedin {
+	background-position:-30px -225px;
+}
+a.linkedin:hover {
+	background-position:-95px -225px;
+}
+a.pinterest {
+	background-position:-30px -550px;
+}
+a.pinterest:hover {
+	background-position:-95px -550px;
 }
 

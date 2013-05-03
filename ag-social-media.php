@@ -3,7 +3,7 @@
  * Plugin Name: AgriLife Social Media
  * Plugin URI: https://github.com/channeleaton/AgriLife-Social-Media
  * Description: Social media widget for Texas A&M AgriLife
- * Version: 0.2
+ * Version: 1.0 
  * Author: J. Aaron Eaton
  * Author URI: http://channeleaton.com
  * License: GPL2
@@ -79,6 +79,15 @@ class AgriLife_Social_Media extends WP_Widget {
       case 'youtube' :
         return $value;
         break;
+      case 'linkedin' :
+        return $value;
+        break;
+      case 'instagram' :
+        return $value;
+        break;
+      case 'pinterest' :
+        return $value;
+        break;
       case 'rss' :
         return $value;
         break;
@@ -103,6 +112,9 @@ class AgriLife_Social_Media extends WP_Widget {
     $instance['s']['twitter'] = strip_tags( $new_instance['twitter'] );
     $instance['s']['flickr'] = strip_tags( $new_instance['flickr'] );
     $instance['s']['youtube'] = strip_tags( $new_instance['youtube'] );
+    $instance['s']['linkedin'] = strip_tags( $new_instance['linkedin'] );
+    $instance['s']['instagram'] = strip_tags( $new_instance['instagram'] );
+    $instance['s']['pinterest'] = strip_tags( $new_instance['pinterest'] );
     $instance['s']['rss'] = strip_tags( $new_instance['rss'] );
 
     return $instance;
@@ -139,6 +151,15 @@ class AgriLife_Social_Media extends WP_Widget {
     if ( isset( $instance['s']['youtube'] ) ) {
       $youtube = $instance['s']['youtube'];
     }
+    if ( isset( $instance['s']['linkedin'] ) ) {
+      $linkedin = $instance['s']['linkedin'];
+    }
+    if ( isset( $instance['s']['instagram'] ) ) {
+      $instagram = $instance['s']['instagram'];
+    }
+    if ( isset( $instance['s']['pinterest'] ) ) {
+      $pinterest = $instance['s']['pinterest'];
+    }
     if ( empty( $instance['s']['rss'] ) ) {
       $rss = $options['feedBurner'];
     }
@@ -151,7 +172,7 @@ class AgriLife_Social_Media extends WP_Widget {
       <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <hr />
-    <p class="description">Include 'http://' in all fields</p>
+    <p class="description">Include 'http://' in all aaaafields</p>
     <p>
       <label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="text" value="<?php echo esc_attr( $facebook ); ?>" />
@@ -171,6 +192,18 @@ class AgriLife_Social_Media extends WP_Widget {
     <p>
       <label for="<?php echo $this->get_field_id( 'youtube' ); ?>"><?php _e( 'Youtube:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'youtube' ); ?>" name="<?php echo $this->get_field_name( 'youtube' ); ?>" type="text" value="<?php echo esc_attr( $youtube ); ?>" />
+    </p>
+    <p>
+      <label for="<?php echo $this->get_field_id( 'linkedin' ); ?>"><?php _e( 'LinkedIn:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'linkedin' ); ?>" name="<?php echo $this->get_field_name( 'linkedin' ); ?>" type="text" value="<?php echo esc_attr( $linkedin ); ?>" />
+    </p>
+    <p>
+      <label for="<?php echo $this->get_field_id( 'instagram' ); ?>"><?php _e( 'Instagram:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'instagram' ); ?>" name="<?php echo $this->get_field_name( 'instagram' ); ?>" type="text" value="<?php echo esc_attr( $instagram ); ?>" />
+    </p>
+    <p>
+      <label for="<?php echo $this->get_field_id( 'pinterest' ); ?>"><?php _e( 'Pinterest:' ); ?></label>
+      <input class="widefat" id="<?php echo $this->get_field_id( 'pinterest' ); ?>" name="<?php echo $this->get_field_name( 'pinterest' ); ?>" type="text" value="<?php echo esc_attr( $pinterest ); ?>" />
     </p>
     <p>
       <label for="<?php echo $this->get_field_id( 'rss' ); ?>"><?php _e( 'RSS Feed URL:' ); ?></label>

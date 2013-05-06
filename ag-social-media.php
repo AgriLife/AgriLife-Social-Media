@@ -172,7 +172,7 @@ class AgriLife_Social_Media extends WP_Widget {
       <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
     </p>
     <hr />
-    <p class="description">Include 'http://' in all aaaafields</p>
+    <p class="description">Include 'http://' in all fields. Full profile URLs only.</p>
     <p>
       <label for="<?php echo $this->get_field_id( 'facebook' ); ?>"><?php _e( 'Facebook:' ); ?></label>
       <input class="widefat" id="<?php echo $this->get_field_id( 'facebook' ); ?>" name="<?php echo $this->get_field_name( 'facebook' ); ?>" type="text" value="<?php echo esc_attr( $facebook ); ?>" />

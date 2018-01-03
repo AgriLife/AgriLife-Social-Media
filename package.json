@@ -1,0 +1,23 @@
+{
+  "name": "agrilife-social-media",
+  "version": "1.0.1",
+  "description": "Social media widget for Texas A&M AgriLife",
+  "main": "ag-social-media.php",
+  "scripts": {},
+  "engines": {
+    "node": "4.0.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgriLife/agrilife-social-media.git"
+  },
+  "author": "J. Aaron Eaton",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/AgriLife/agrilife-social-media/issues"
+  },
+  "homepage": "https://github.com/AgriLife/agrilife-social-media#readme"
+}

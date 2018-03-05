@@ -1,6 +1,6 @@
 {
   "name": "agrilife-social-media",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Social media widget for Texas A&M AgriLife",
   "main": "ag-social-media.php",
   "scripts": {},
